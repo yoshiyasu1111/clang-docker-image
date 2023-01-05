@@ -13,5 +13,5 @@ RUN apt-get update \
     && cd ../ \
     && rm -fr llvm-project \
     && apt-get purge -y git \
-    && apt-get autoremove \
+    && apt-get autoremove -y \
     && rm -fr /var/lib/apt/lists/*
